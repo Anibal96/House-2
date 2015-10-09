@@ -73,21 +73,23 @@ public class Picture
         juanito.moveVertical(20);
         juanito.makeVisible();
         
-        
         circulo1 = new Circle();
-        circulo1.changeColor("yellow");
-        sun.moveHorizontal(-200);
-        sun.moveVertical(50);
+        circulo1.changeColor("red");
+        circulo1.moveHorizontal(200);
+        circulo1.moveVertical(50);
+        circulo1.changeSize(30);
         
         circulo2 = new Circle();
-        circulo2.changeColor("yellow");
-        circulo2.moveHorizontal(-150);
+        circulo2.changeColor("black");
+        circulo2.moveHorizontal(150);
         circulo2.moveVertical(100);
+        circulo2.changeSize(30);
         
         circulo3 = new Circle();
-        circulo3.changeColor("yellow");
-        circulo3.moveHorizontal(-150);
+        circulo3.changeColor("green");
+        circulo3.moveHorizontal(150);
         circulo3.moveVertical(50);
+        circulo3.changeSize(30);
     }
 
     /**
@@ -101,6 +103,10 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            campo.changeColor("black");
+            circulo1.changeColor("black");
+            circulo2.changeColor("white");
+            circulo3.changeColor("black");
         }
     }
 
@@ -115,6 +121,28 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+            campo.changeColor("green");
+            circulo1.changeColor("red");
+            circulo2.changeColor("black");
+            circulo3.changeColor("green");
+        }
+    }
+    /**
+     * Change this picture to use color display
+     */
+    public void puestaDeSol()
+    {
+        if (sun != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(120);
+            wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("black");
+            campo.changeColor("black");
+            circulo1.changeColor("black");
+            circulo2.changeColor("white");
+            circulo3.changeColor("black");
         }
     }
     /**
@@ -135,9 +163,12 @@ public class Picture
         if (circulo2 != null)
         if (circulo3 != null)// only if it's painted already...
         {
-            circulo1.makeVisible();
             circulo2.makeVisible();
+            circulo2.slowMoveVertical(-50);
             circulo3.makeVisible();
+            circulo3.slowMoveHorizontal(50);
+            circulo1.makeVisible();
+            circulo1.slowMoveVertical(50);
         }
     }
 }
