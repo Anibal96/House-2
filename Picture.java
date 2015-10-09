@@ -18,6 +18,9 @@ public class Picture
     private Circle sun2;
     private Square campo;
     private Person juanito;
+    private Circle circulo1;
+    private Circle circulo2;
+    private Circle circulo3;
 
     /**
      * Constructor for objects of class Picture
@@ -70,6 +73,21 @@ public class Picture
         juanito.moveVertical(20);
         juanito.makeVisible();
         
+        
+        circulo1 = new Circle();
+        circulo1.changeColor("yellow");
+        sun.moveHorizontal(-200);
+        sun.moveVertical(50);
+        
+        circulo2 = new Circle();
+        circulo2.changeColor("yellow");
+        circulo2.moveHorizontal(-150);
+        circulo2.moveVertical(100);
+        
+        circulo3 = new Circle();
+        circulo3.changeColor("yellow");
+        circulo3.moveHorizontal(-150);
+        circulo3.moveVertical(50);
     }
 
     /**
@@ -105,9 +123,21 @@ public class Picture
     public void paseo()
     {
         if (juanito != null)   // only if it's painted already...
-        {juanito.slowMoveHorizontal(100);
-         
-            
+        {juanito.slowMoveHorizontal(100);   
+        }
+    }
+    /**
+     * Change this picture to use color display
+     */
+    public void figuras()
+    {
+        if (circulo1 != null)
+        if (circulo2 != null)
+        if (circulo3 != null)// only if it's painted already...
+        {
+            circulo1.makeVisible();
+            circulo2.makeVisible();
+            circulo3.makeVisible();
         }
     }
 }
