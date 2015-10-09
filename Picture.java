@@ -105,7 +105,7 @@ public class Picture
             sun.changeColor("black");
             campo.changeColor("black");
             circulo1.changeColor("black");
-            circulo2.changeColor("white");
+            circulo2.changeColor("black");
             circulo3.changeColor("black");
         }
     }
@@ -141,7 +141,7 @@ public class Picture
             sun.changeColor("black");
             campo.changeColor("black");
             circulo1.changeColor("black");
-            circulo2.changeColor("white");
+            circulo2.changeColor("black");
             circulo3.changeColor("black");
         }
     }
@@ -169,6 +169,20 @@ public class Picture
             circulo3.slowMoveHorizontal(50);
             circulo1.makeVisible();
             circulo1.slowMoveVertical(50);
+        }
+    }
+    /**
+     * Change this picture to use color display
+     */
+    public void colorFiguras()
+    {
+        if (circulo1 != null)
+        if (circulo2 != null)
+        if (circulo3 != null)// only if it's painted already...
+        {
+            circulo1.changeColor("black");
+            circulo2.changeColor("green");
+            circulo3.changeColor("red");
         }
     }
 }
