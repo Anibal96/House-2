@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
     private Circle sun2;
     private Square campo;
+    private Person juanito;
 
     /**
      * Constructor for objects of class Picture
@@ -64,6 +65,10 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
+        juanito = new Person();
+        juanito.moveHorizontal(-230);
+        juanito.moveVertical(20);
+        juanito.makeVisible();
         
     }
 
@@ -94,20 +99,17 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
-/**
+    /**
      * Change this picture to use color display
      */
-    public void movesun()
+    public void paseo()
     {
-        if (sun != null)   // only if it's painted already...
-        {
-            sun.slowMoveVertical(120);
-            wall.changeColor("black");
-            window.changeColor("white");
-            roof.changeColor("black");
-            sun.changeColor("black");
-            campo.changeColor("black");
+        if (juanito != null)   // only if it's painted already...
+        {juanito.slowMoveHorizontal(100);
+         
+            
         }
     }
 }
+
      
