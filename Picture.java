@@ -21,6 +21,9 @@ public class Picture
     private Circle circulo1;
     private Circle circulo2;
     private Circle circulo3;
+    private Square tronco;
+    private Circle copa;
+    private Person juanita;
 
     /**
      * Constructor for objects of class Picture
@@ -53,6 +56,11 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+        tronco = new Square();
+        tronco.moveHorizontal(-400);
+        tronco.moveVertical(10);
+        tronco.changeSize(120);
 
         campo = new Square();
         campo.changeColor("green");
@@ -64,31 +72,43 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        sun.moveVertical(-20);
         sun.changeSize(80);
         sun.makeVisible();
         
         juanito = new Person();
         juanito.moveHorizontal(-230);
         juanito.moveVertical(20);
+        juanito.changeColor("black");
+        
+        juanita = new Person();
+        juanita.moveHorizontal(-230);
+        juanita.moveVertical(20);
+        juanita.changeColor("magenta");
+        
+        copa = new Circle();
+        copa.changeColor("green");
+        copa.moveHorizontal(-280);
+        copa.moveVertical(-50);
+        copa.changeSize(120);
         
         circulo1 = new Circle();
-        circulo1.changeColor("red");
-        circulo1.moveHorizontal(200);
-        circulo1.moveVertical(50);
-        circulo1.changeSize(30);
+        circulo1.changeColor("green");
+        circulo1.moveHorizontal(-190);
+        circulo1.moveVertical(-20);
+        circulo1.changeSize(10);
         
         circulo2 = new Circle();
-        circulo2.changeColor("black");
-        circulo2.moveHorizontal(150);
-        circulo2.moveVertical(100);
-        circulo2.changeSize(30);
+        circulo2.changeColor("green");
+        circulo2.moveHorizontal(-200);
+        circulo2.moveVertical(40);
+        circulo2.changeSize(10);
         
         circulo3 = new Circle();
         circulo3.changeColor("green");
-        circulo3.moveHorizontal(150);
-        circulo3.moveVertical(50);
-        circulo3.changeSize(30);
+        circulo3.moveHorizontal(-220);
+        circulo3.moveVertical(0);
+        circulo3.changeSize(10);
     }
 
     /**
@@ -106,6 +126,8 @@ public class Picture
             circulo1.changeColor("black");
             circulo2.changeColor("black");
             circulo3.changeColor("black");
+            tronco.changeColor("black");
+            copa.changeColor("black");
         }
     }
 
@@ -121,9 +143,11 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
             campo.changeColor("green");
+            tronco.changeColor("red");
+            copa.changeColor("green");
             circulo1.changeColor("red");
-            circulo2.changeColor("black");
-            circulo3.changeColor("green");
+            circulo2.changeColor("red");
+            circulo3.changeColor("red");
         }
     }
     /**
@@ -133,7 +157,208 @@ public class Picture
     {
         if (sun != null)   // only if it's painted already...
         {
-            sun.slowMoveVertical(120);
+            juanito.makeVisible();
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            sun.slowMoveVertical(1);
+            juanito.slowMoveHorizontal(1);
+            juanito.makeInvisible();
             wall.changeColor("black");
             window.changeColor("white");
             roof.changeColor("black");
@@ -142,6 +367,184 @@ public class Picture
             circulo1.changeColor("black");
             circulo2.changeColor("black");
             circulo3.changeColor("black");
+            tronco.changeColor("black");
+            copa.changeColor("black");
+        }
+    }
+    /**
+     * Change this picture to use color display
+     */
+    public void amanecer()
+    {
+        if (sun != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(-30);
+            wall.changeColor("red");
+            window.changeColor("black");
+            roof.changeColor("green");
+            sun.changeColor("yellow");
+            campo.changeColor("green");
+            tronco.changeColor("red");
+            copa.changeColor("green");
+            circulo1.changeColor("red");
+            circulo2.changeColor("red");
+            circulo3.changeColor("red");
+            juanita.moveHorizontal(30);
+            juanita.makeVisible();
+            juanito.makeVisible();
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            sun.slowMoveVertical(-1);
+            juanito.slowMoveHorizontal(-2);
+            juanita.slowMoveHorizontal(-2);
+            juanito.makeInvisible();
+            juanita.makeInvisible();
+            sun.slowMoveVertical(-20);
+            
         }
     }
     /**
@@ -149,40 +552,40 @@ public class Picture
      */
     public void paseo()
     {
-        if (juanito != null)   // only if it's painted already...
+        if (juanita != null)   // only if it's painted already...
         {
-            juanito.makeVisible();
-            juanito.slowMoveHorizontal(100);   
+            juanita.makeVisible();
+            juanita.slowMoveHorizontal(100);   
+            juanita.makeInvisible();
         }
     }
     /**
      * Change this picture to use color display
      */
-    public void figuras()
+    public void arbol()
     {
         if (circulo1 != null)
         if (circulo2 != null)
         if (circulo3 != null)// only if it's painted already...
         {
-            circulo2.makeVisible();
-            circulo2.slowMoveVertical(-50);
-            circulo3.makeVisible();
-            circulo3.slowMoveHorizontal(50);
+            tronco.makeVisible();
+            copa.makeVisible();
             circulo1.makeVisible();
-            circulo1.slowMoveVertical(50);
+            circulo2.makeVisible();
+            circulo3.makeVisible();
         }
     }
     /**
      * Change this picture to use color display
      */
-    public void colorFiguras()
+    public void cerezas()
     {
         if (circulo1 != null)
         if (circulo2 != null)
         if (circulo3 != null)// only if it's painted already...
         {
-            circulo1.changeColor("black");
-            circulo2.changeColor("green");
+            circulo1.changeColor("red");
+            circulo2.changeColor("red");
             circulo3.changeColor("red");
         }
     }
