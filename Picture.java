@@ -71,7 +71,6 @@ public class Picture
         juanito = new Person();
         juanito.moveHorizontal(-230);
         juanito.moveVertical(20);
-        juanito.makeVisible();
         
         circulo1 = new Circle();
         circulo1.changeColor("red");
@@ -151,7 +150,9 @@ public class Picture
     public void paseo()
     {
         if (juanito != null)   // only if it's painted already...
-        {juanito.slowMoveHorizontal(100);   
+        {
+            juanito.makeVisible();
+            juanito.slowMoveHorizontal(100);   
         }
     }
     /**
